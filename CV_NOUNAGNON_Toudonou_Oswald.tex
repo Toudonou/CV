@@ -15,6 +15,8 @@
 \usepackage[margin=1cm, a4paper]{geometry}
 \setcounter{secnumdepth}{0} % remove section numbering
 \usepackage{titlesec}
+\usepackage{fontawesome5}
+
 \titlespacing{\subsection}{0pt}{*0}{*0} % remove vertical spacing above and below
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
 \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
@@ -24,87 +26,104 @@
 \setlist[itemize]{noitemsep,left=0pt .. \parindent}
 \pagestyle{empty} % remove page number
 \pdfgentounicode=1
+\renewcommand{\baselinestretch}{0.9}
 
 
 \begin{document}
 
-\begin{center}
-	\begin{minipage}{0.5\textwidth}
-		{\Huge\bfseries
-        Oswald NOUNAGNON % Name Here
-		} \\ \medskip
-        {\large Développeur Informatique} % Title [optional]
-	\end{minipage} \hfill
-	\begin{minipage}{0.4\textwidth}
-		\raggedleft
-		Email: \href{mailto:hnounagnonoswald@gmail.com}{hnounagnonoswald@gmail.com} \\
-		Mobile: 06 47 85 58 50 \\
-		LinkedIn: \textit{\href{https://www.linkedin.com/in/toudonou/}{\underline{Toudonou}}} \\
-        GitHub: \textit{\href{https://github.com/toudonou}{\underline{Toudonou}}}
-	\end{minipage}
-\end{center}
+    \begin{center}
+        {
+            \fontsize{36}{12}
+            \fontseries{heavy}\selectfont
+            Oswald NOUNAGNON % YOUR NAME HERE
+        } \\ \medskip
 
-\section{EXPÉRIENCE PROFESSIONNELLE}
+        \faPhone \space 06 47 85 58 50 \quad
+        \href{mailto:hnounagnonoswald@gmail.com}{\faEnvelope \space hnounagnonoswald@gmail.com} \quad
+        \href{https://github.com/toudonou}{\faGithub \space Toudonou} \quad
+        \href{https://www.linkedin.com/in/toudonou}{\faLinkedin \space Toudonou} \quad
+    \end{center}
+
+
+    \section{EXPÉRIENCE PROFESSIONNELLE}
 %=================%
-\subsection{CGI Finance - SG \hfill Lille, France}
-\subsubsection{Alternant Développeur back .Net \hfill  Septembre 2024 - Septembre 2026}
-\begin{itemize}
-	\item Beginning with your most recent position, describe your experience, skills, and resulting outcomes in bullet or paragraph form.
-	\item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
-	\item Quantify where possible. Do not use personal pronouns; each line should be a phrase rather than a full sentence.
-\end{itemize}
 
-\section{Education}
+    \subsection{CGI Finance - SG \hfill Lille, France}
+
+    \subsubsection{Alternant Développeur backend .NET \hfill  Septembre 2024 - Septembre 2026}
+    \begin{itemize}
+        \item Beginning with your most recent position, describe your experience, skills, and resulting outcomes in bullet or paragraph form.
+        \item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
+        \item Quantify where possible. Do not use personal pronouns; each line should be a phrase rather than a full sentence.
+    \end{itemize}
+
+
+    \section{Education}
 %=================%
-\subsubsection{FORMATION D’INGENIEURS EN INFORMATIQUE \hfill 2023 - 2026}
-\begin{itemize}
-    \item Ecole d’Ingénieurs du Littoral Côte d’Opale (ELCO)
-    \item France
-\end{itemize}
-\subsubsection{LICENCE INFORMATIQUE \hfill 2022 - 2023}
-\begin{itemize}
-    \item Institut de Mathématiques et de Sciences Physiques (IMSP)
-    \item Bénin
-    \item \textit{Mention Bien}
-\end{itemize}
-\subsubsection{CLASSES PREPARATOIRES AUX GRANDES ECOLES - MPSI \hfill 2020 - 2022}
-\begin{itemize}
-    \item Institut de Mathématiques et de Sciences Physiques (IMSP)
-    \item Bénin
-    \item \textit{Mention Bien}
-\end{itemize}
 
-\section{COMPÉTENCES}
+    \subsubsection{FORMATION D’INGENIEURS EN INFORMATIQUE \hfill 2023 - 2026}
+    \begin{itemize}
+        \item Ecole d’Ingénieurs du Littoral Côte d’Opale (ELCO)
+        \item France
+    \end{itemize}
+
+    \subsubsection{LICENCE INFORMATIQUE \hfill 2022 - 2023}
+%\begin{itemize}
+%    \item Institut de Mathématiques et de Sciences Physiques (IMSP)
+%    \item Bénin
+%    \item \textit{Mention Bien}
+%\end{itemize}
+
+    \subsubsection{CLASSES PREPARATOIRES AUX GRANDES ECOLES - MPSI \hfill 2020 - 2022}
+    \begin{itemize}
+        \item Institut de Mathématiques et de Sciences Physiques (IMSP)
+        \item Bénin
+        \item \textit{Mention Bien}
+    \end{itemize}
+
+
+    \section{COMPÉTENCES}
 %===========================%
-\begin{description}[itemsep=0pt]
-	\item[Techniques:] C/C++, Rust, C\#, ASP.Net, Java, JetBrains IDE, VS Code
-	\item[Langues:] Français (Langue maternelle), Anglais (B2*, 800 au TOEIC)
-	\item[Loisirs:] Course à pied - Films et Séries - Mangas
-\end{description}
+    \begin{description}[itemsep=0pt]
+	\item[Techniques :] C/C++, Rust, C\#, ASP.NET, Java, SQL, Git, GitHub, Docker, Azure DevOps, JetBrains IDE, VS Code
+    \item[Langues :] Français (Langue maternelle), Anglais (B2*, 920/990 au TOEIC)
+    \item[Loisirs :] Course à pied - Films et Séries - Mangas
+    \end{description}
 
-\section{Projets}
+
+    \section{Projets}
 %=================
-\subsubsection{Zeno \hfill Décembre 2025}
-\begin{itemize}
-  \item Bot d'échec
-  \item Langage utilisé : Rust
-  \item Lien: \url{https://github.com/Toudonou/zeno}
-\end{itemize}
-\subsubsection{Raccourcisseur d'url \hfill Juin 2025}
-\begin{itemize}
-    \item Langage utilisé : C\# - HTML - CSS
-    \item Lien: \url{https://github.com/Toudonou/url-shortener}
-\end{itemize}
-\subsubsection{Démineur en console \hfill Juin 2025}
-\begin{itemize}
-    \item Langage utilisé : C++
-    \item Lien: \url{https://github.com/Toudonou/minesweeper}
-\end{itemize}
-\subsubsection{Huffman Encoding CLI Tool\hfill Février 2025}
-\begin{itemize}
-    \item Outil de compression de fichier txt avec l'algorithme de Huffman
-    \item Langage utilisé : C++
-    \item Lien: \url{https://github.com/Toudonou/huffman-encoding-cli}
-\end{itemize}
+
+    \subsubsection{Zeno \hfill Décembre 2025}
+    \begin{itemize}
+        \item Bot d'échecs développé en Rust
+        \item Algorithmes : Implémentation d'une recherche \textit{Alpha-Bêta} et ordonnancement des coups avec du \textit{Move Ordering}
+        \item Technique : Utilisation de \textit{Bitboards} pour la représentation du plateau et utilisation des tables de transposition pour la mise en cache des positions
+        \item Lien: \href{https://github.com/Toudonou/zeno}{\textit{\underline{zeno}}}
+    \end{itemize}
+
+    \subsubsection{Raccourcisseur d'url \hfill Juin 2025}
+    \begin{itemize}
+        \item Application web pour le raccourcissement et la redirection de liens.
+        \item Logique : Implémentation d'un algorithme d'encodage en \textit{Base62} pour générer des clés uniques et courtes
+        \item Stack : C\# (.NET) pour le backend, HTML/CSS pour l'interface utilisateur.
+        \item Lien: \href{https://github.com/Toudonou/url-shortener}{\textit{\underline{url-shortener}}}
+    \end{itemize}
+
+    \subsubsection{Démineur \hfill Juin 2025}
+    \begin{itemize}
+        \item Jeu développé en C++ avec \href{https://www.raylib.com/}{\textit{raylib}} pour la partie graphique
+        \item Algorithmes : Utilisation de l'algorithme \textit{Flood Fill} (propagation par récursion) pour le dévoilement automatique des zones vides
+        \item Conception : Gestion des états du jeu avec mise en place d'un systeme de scènes
+        \item Lien: \href{https://github.com/Toudonou/minesweeper}{\textit{\underline{minesweeper}}}
+    \end{itemize}
+
+    \subsubsection{Huffman Encoding CLI Tool \hfill Février 2025}
+    \begin{itemize}
+        \item Outil de compression de fichiers texte basé sur l'encodage entropique
+        \item Structure de donnée : Création de représentation intermédaire avec un \textit{Arbre de binaire}
+        \item Technique : Encodage et décodage binaire par fréquence de caractères, permettant une réduction significative de la taille des fichiers
+        \item Lien: \href{https://github.com/Toudonou/huffman-encoding-cli}{\textit{\underline{huffman-encoding-cli}}}
+    \end{itemize}
 
 \end{document}
