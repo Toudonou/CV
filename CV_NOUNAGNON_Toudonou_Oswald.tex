@@ -1,0 +1,110 @@
+%-------------------------
+% Rover Resume - Base Template
+% Link: https://github.com/subidit/rover-resume
+%
+% Shows code for various formatting options for different resume sections.
+% Education and Projects have single-line headers; while Experience uses double-line.
+% Some formatting codes are kept inline; consider \newcommand{cmd}{def}.
+% Excludes hyperref and icons for readability; MVP version.
+% Explore other templates for more options.
+% Mix and match as desired. Be consistent with headers and sub-headers.
+%------------------------
+
+\documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
+
+\usepackage[margin=1cm, a4paper]{geometry}
+\setcounter{secnumdepth}{0} % remove section numbering
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{*0} % remove vertical spacing above and below
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat*{\subsubsection}{\large\itshape}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\setlist[itemize]{noitemsep,left=0pt .. \parindent}
+\pagestyle{empty} % remove page number
+\pdfgentounicode=1
+
+
+\begin{document}
+
+\begin{center}
+	\begin{minipage}{0.5\textwidth}
+		{\Huge\bfseries
+        Oswald NOUNAGNON % Name Here
+		} \\ \medskip
+        {\large Développeur Informatique} % Title [optional]
+	\end{minipage} \hfill
+	\begin{minipage}{0.4\textwidth}
+		\raggedleft
+		Email: \href{mailto:hnounagnonoswald@gmail.com}{hnounagnonoswald@gmail.com} \\
+		Mobile: 06 47 85 58 50 \\
+		LinkedIn: \textit{\href{https://www.linkedin.com/in/toudonou/}{\underline{Toudonou}}} \\
+        GitHub: \textit{\href{https://github.com/toudonou}{\underline{Toudonou}}}
+	\end{minipage}
+\end{center}
+
+\section{EXPÉRIENCE PROFESSIONNELLE}
+%=================%
+\subsection{CGI Finance - SG \hfill Lille, France}
+\subsubsection{Alternant Développeur back .Net \hfill  Septembre 2024 - Septembre 2026}
+\begin{itemize}
+	\item Beginning with your most recent position, describe your experience, skills, and resulting outcomes in bullet or paragraph form.
+	\item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
+	\item Quantify where possible. Do not use personal pronouns; each line should be a phrase rather than a full sentence.
+\end{itemize}
+
+\section{Education}
+%=================%
+\subsubsection{FORMATION D’INGENIEURS EN INFORMATIQUE \hfill 2023 - 2026}
+\begin{itemize}
+    \item Ecole d’Ingénieurs du Littoral Côte d’Opale (ELCO)
+    \item France
+\end{itemize}
+\subsubsection{LICENCE INFORMATIQUE \hfill 2022 - 2023}
+\begin{itemize}
+    \item Institut de Mathématiques et de Sciences Physiques (IMSP)
+    \item Bénin
+    \item \textit{Mention Bien}
+\end{itemize}
+\subsubsection{CLASSES PREPARATOIRES AUX GRANDES ECOLES - MPSI \hfill 2020 - 2022}
+\begin{itemize}
+    \item Institut de Mathématiques et de Sciences Physiques (IMSP)
+    \item Bénin
+    \item \textit{Mention Bien}
+\end{itemize}
+
+\section{COMPÉTENCES}
+%===========================%
+\begin{description}[itemsep=0pt]
+	\item[Techniques:] C/C++, Rust, C\#, ASP.Net, Java, JetBrains IDE, VS Code
+	\item[Langues:] Français (Langue maternelle), Anglais (B2*, 800 au TOEIC)
+	\item[Loisirs:] Course à pied - Films et Séries - Mangas
+\end{description}
+
+\section{Projets}
+%=================
+\subsubsection{Zeno \hfill Décembre 2025}
+\begin{itemize}
+  \item Bot d'échec
+  \item Langage utilisé : Rust
+  \item Lien: \url{https://github.com/Toudonou/zeno}
+\end{itemize}
+\subsubsection{Raccourcisseur d'url \hfill Juin 2025}
+\begin{itemize}
+    \item Langage utilisé : C\# - HTML - CSS
+    \item Lien: \url{https://github.com/Toudonou/url-shortener}
+\end{itemize}
+\subsubsection{Démineur en console \hfill Juin 2025}
+\begin{itemize}
+    \item Langage utilisé : C++
+    \item Lien: \url{https://github.com/Toudonou/minesweeper}
+\end{itemize}
+\subsubsection{Huffman Encoding CLI Tool\hfill Février 2025}
+\begin{itemize}
+    \item Outil de compression de fichier txt avec l'algorithme de Huffman
+    \item Langage utilisé : C++
+    \item Lien: \url{https://github.com/Toudonou/huffman-encoding-cli}
+\end{itemize}
+
+\end{document}
