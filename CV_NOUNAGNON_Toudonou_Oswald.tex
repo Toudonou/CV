@@ -22,7 +22,7 @@
 \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
 \titleformat*{\subsubsection}{\large\itshape}
 \usepackage{enumitem}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \setlist[itemize]{noitemsep,left=0pt .. \parindent}
 \pagestyle{empty} % remove page number
 \pdfgentounicode=1
@@ -38,11 +38,11 @@
             Oswald NOUNAGNON % YOUR NAME HERE
         } \\ \medskip
 
-        \faBirthdayCake \space 21 ans \quad
+%        \faBirthdayCake \space 21 ans \quad
         \faPhone \space 06 47 85 58 50 \quad
-        \href{mailto:hnounagnonoswald@gmail.com}{\faEnvelope \space hnounagnonoswald@gmail.com} \quad
-        \href{https://github.com/toudonou}{\faGithub \space Toudonou} \quad
-        \href{https://www.linkedin.com/in/toudonou}{\faLinkedin \space Toudonou} \quad
+        \href{mailto:hnounagnonoswald@gmail.com}{\faEnvelope \space \underline{hnounagnonoswald@gmail.com}} \quad
+        \href{https://github.com/toudonou}{\faGithub \space \underline{Toudonou}} \quad
+        \href{https://www.linkedin.com/in/toudonou}{\faLinkedin \space \underline{Toudonou}} \quad
     \end{center}
 
 
@@ -98,36 +98,32 @@
     \section{Projets}
 %=================
 
-    \subsubsection{Zeno \hfill Décembre 2025}
+    \subsubsection{Zeno \textbar{} \href{https://github.com/Toudonou/zeno}{\textit{\underline{Lien Github}}} \hfill Décembre 2025}
     \begin{itemize}
         \item Bot d'échecs développé en Rust
         \item Algorithmes : Implémentation d'une recherche \textit{Alpha-Bêta} et ordonnancement des coups avec du \textit{Move Ordering}
         \item Technique : Utilisation de \textit{Bitboards} pour la représentation du plateau et utilisation des tables de transposition pour la mise en cache des positions
-        \item Lien: \href{https://github.com/Toudonou/zeno}{\textit{\underline{zeno}}}
     \end{itemize}
 
-    \subsubsection{Raccourcisseur d'url \hfill Juin 2025}
+    \subsubsection{Raccourcisseur d'url \textbar{} \href{https://github.com/Toudonou/url-shortener}{\textit{\underline{Lien Github}}} \hfill Juin 2025}
     \begin{itemize}
         \item Application web pour le raccourcissement et la redirection de liens.
         \item Logique : Implémentation d'un algorithme d'encodage en \textit{Base62} pour générer des clés uniques et courtes
         \item Stack : C\# (.NET) pour le backend, HTML/CSS pour l'interface utilisateur.
-        \item Lien: \href{https://github.com/Toudonou/url-shortener}{\textit{\underline{url-shortener}}}
     \end{itemize}
 
-    \subsubsection{Démineur \hfill Juin 2025}
+    \subsubsection{Démineur \textbar{} \href{https://github.com/Toudonou/minesweeper}{\textit{\underline{Lien Github}}} \hfill Juin 2025}
     \begin{itemize}
-        \item Jeu développé en C++ avec \href{https://www.raylib.com/}{\textit{raylib}} pour la partie graphique
+        \item Jeu développé en C++ avec \href{https://www.raylib.com/}{\underline{\textit{raylib}}} pour la partie graphique
         \item Algorithmes : Utilisation de l'algorithme \textit{Flood Fill} (propagation par récursion) pour le dévoilement automatique des zones vides
         \item Conception : Gestion des états du jeu avec mise en place d'un systeme de scènes
-        \item Lien: \href{https://github.com/Toudonou/minesweeper}{\textit{\underline{minesweeper}}}
     \end{itemize}
 
-    \subsubsection{Huffman Encoding CLI Tool \hfill Février 2025}
+    \subsubsection{Huffman Encoding CLI Tool \textbar{} \href{https://github.com/Toudonou/huffman-encoding-cli}{\textit{\underline{Lien Github}}} \hfill Février 2025}
     \begin{itemize}
         \item Outil de compression de fichiers texte basé sur l'encodage entropique
         \item Structure de donnée : Création de représentation intermédaire avec un \textit{Arbre de binaire}
         \item Technique : Encodage et décodage binaire par fréquence de caractères, permettant une réduction significative de la taille des fichiers
-        \item Lien: \href{https://github.com/Toudonou/huffman-encoding-cli}{\textit{\underline{huffman-encoding-cli}}}
     \end{itemize}
 
 \end{document}
