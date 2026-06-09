@@ -12,10 +12,11 @@
 
 \documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
 
-\usepackage[margin=1cm, top=0.6cm, a4paper]{geometry}
+\usepackage[margin=1cm, top=0.4cm, bottom=0.4cm, a4paper]{geometry}
 \setcounter{secnumdepth}{0} % remove section numbering
 \usepackage{titlesec}
 \usepackage{fontawesome5}
+\usepackage{qrcode}
 
 \titlespacing{\subsection}{0pt}{*0}{*0} % remove vertical spacing above and below
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
@@ -30,27 +31,31 @@
 
 \begin{document}
 
-	\begin{center}
-		{
-			\fontsize{36}{12}
-			\fontseries{heavy}\selectfont
-			Oswald NOUNAGNON
-		} \\ \medskip
+\begin{center}
+	\begin{minipage}[c]{0.75\textwidth}
+		{\fontsize{36}{40}\fontseries{heavy}\selectfont Oswald NOUNAGNON} \\[0.1cm]
 
-		% ---- LINE 1 ----
-		\faPhone\ 06 47 85 58 50 \quad
-		\href{mailto:hnounagnonoswald@gmail.com}{\faEnvelope\ \underline{hnounagnonoswald@gmail.com}} \quad
-		\href{https://github.com/toudonou}{\faGithub\ \underline{github.com/toudonou}}
-		\
-
-		% ---- LINE 2 ----
-		\href{https://www.linkedin.com/in/toudonou}{\faLinkedin\ \underline{linkedin.com/in/toudonou}} \quad
+		\begin{tabular}{ll}
+			\faPhone\ 06 47 85 58 50 &
+			\faGithub\ \href{https://github.com/toudonou}{\underline{github.com/toudonou}}
+			\\[0.5em]
+			\faEnvelope\ \href{mailto:hnounagnonoswald@gmail.com}
+			{\underline{hnounagnonoswald@gmail.com}}
+			                         &
+			\faLinkedin\ \href{https://www.linkedin.com/in/toudonou}
+			{\underline{linkedin.com/in/toudonou}}
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[c]{0.20\textwidth}
+		\centering
+		\qrcode[height=2.0cm]{https://toudonou.github.io}\\[0.1cm]
 		\href{https://toudonou.github.io/}{\faGlobe\ \underline{toudonou.github.io}}
-	\end{center}
-
+	\end{minipage}
+\end{center}
 
 \section{PROFIL}
-Étudiant ingénieur en informatique (spécialité IA) à l'EILCO, alternant développeur backend .NET chez CGI Finance - SG, je suis passionné par les langages systèmes comme le Rust et le C++. Rigoureux et déterminé, je recherche un CDI à partir de septembre 2026.
+Étudiant ingénieur en informatique (spécialité IA) à l'EILCO, alternant développeur backend chez CGI Finance - SG, je suis passionné par les langages bas niveau (Rust/C++). En recherche d'un CDI à partir de septembre 2026.
 Mobile partout en France, ouvert à l'international.
 
 \section{EXPÉRIENCE PROFESSIONNELLE}
@@ -58,7 +63,7 @@ Mobile partout en France, ouvert à l'international.
 
 \subsection{CGI Finance - SG \hfill Lille, France}
 
-\subsubsection{Alternant Développeur backend .NET \hfill  Septembre 2024 - Septembre 2026}
+\subsubsection{Alternant Développeur backend .NET \hfill  Septembre 2024 - Septembre 2026 (en cours)}
 \begin{itemize}
 	\item Développement de services backend en .NET
 	\item Maintien et évolution d'un espace client en production
@@ -96,11 +101,11 @@ Mobile partout en France, ouvert à l'international.
 \section{COMPETENCES}
 %===========================%
 \begin{description}[itemsep=0pt]
-	\item[Langages :] C/C++, Rust, C\#, Vue.js, Java, Python, SQL (PostgreSQL, MySQL, Oracle DB), Bash
-	\item[Frameworks :] .NET/.NET Core
-	\item[Développement logiciel :] Behavior-Driven Development (BDD), API REST, CI/CD, Helm, Elasticsearch
-	\item[Outils :] Git, GitHub, Docker, Azure DevOps, JetBrains IDE, VS Code, Vim, DataDog
-		%\item[Personnelles :] Déterminé - Rigoureux - Capacité d’adaptation
+	\item[Langages :] C/C++, Rust, C\#, Java, Python, SQL, Bash
+	\item[Backend :] .NET/.NET Core, Behavior-Driven Development (BDD), API REST
+	\item[DevOps :] Azure DevOps, CI/CD, Helm, Elasticsearch, Rancher, DataDog
+	\item[Outils :] Git, GitHub, JetBrains IDE, VS Code, Vim
+	      %\item[Personnelles :] Déterminé - Rigoureux - Capacité d’adaptation
 	\item[Langues :] Français (Langue maternelle), Anglais (B2*, 920/990 au TOEIC)
 	\item[Loisirs :] Course à pied - Films et Séries - Mangas
 \end{description}
